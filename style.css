@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 1s;
+}
+
+
+.sidebarIcon i {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 30px 30px;
+    font-size: 36px;
+    color: #49a6e9;
+    cursor: pointer;
+    animation: sidebarUpDown 2s ease-in-out infinite;
+}
+
+@keyframes sidebarUpDown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sidebarIcon i:hover {
+    color: #99d0f8;
+}
+
+.sideBar {
+    background-color: rgb(255, 255, 255);
+    width: 425px;
+    height: 100vh;
+    box-shadow: 1px 0px 1px #b8b8b8;
+    z-index: 2;
+}
+
+.topHeading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.topHeading h2 {
+    letter-spacing: 7px;
+    text-shadow: 0 5px 4px #a39b8f;
+}
+
+.topHeading span {
+    color: #46a9ee;
+}
+
+.topHeading .close i {
+    font-size: 30px;
+    color: rgb(158, 7, 7);
+    cursor: pointer;
+}
+
+.topHeading .close i:hover {
+    transform: rotate(360deg);
+}
+
+.sideBar ul {
+    padding: 3.5em 0 3.5em 0;
+}
+
+.sideBar ul li {
+    list-style-type: none;
+    padding: 1em 0 1em 1.2em;
+    font-size: 25px;
+    cursor: pointer;
+    color: #59788b;
+
+}
+
+.sideBar ul li:hover {
+    background-color: #52b8f8;
+    transition: all 0.8s ease;
+    padding-left: 1.5em;
+    color: #1e5dd3;
+}
+
+.socialLinks {
+    font-size: 28px;
+    padding-left: 30px;
+}
+
+.socialLinks a {
+    color: #46a9ee;
+    padding: 10px;
+    text-decoration: none;
+    
+
+}
+.socialLinks {
+    display: flex !important;
+}
+
+.socialLinks a i:hover {
+    color: #000000;
+    transform: translateX(10px) rotate(20deg);
+}
+
+.showSidebar {
+    transform: translate(-100%);
+}
+
